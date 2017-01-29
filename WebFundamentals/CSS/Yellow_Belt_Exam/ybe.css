@@ -1,0 +1,217 @@
+*{
+    font-family:serif;
+}
+.container {
+    width: 960px;
+    color: black;
+
+}
+
+.header {
+    width: 93.8%;
+    height: 100px;
+    background: #1A1A1A;
+    display: block;
+    padding:20px;
+}
+.header img {
+    display: inline;
+}
+
+.header h1 {
+    font-size: 1em;
+    color: #B0B0B0;
+    display: inline;
+    margin-left: 488px;
+    position: absolute;
+    top: 29px;
+    left: 272px;
+    font-family: sans-serif;
+}
+
+.main_menu {
+    width: 97.9%;
+    height: 48px;
+    background-color:black;
+    background: -webkit-linear-gradient(#515151, black);
+    background: -o-linear-gradient(#515151, black);
+    background: -moz-linear-gradient(#515151, black);
+    background: linear-gradient(#515151, black);
+    display: block;
+}
+
+.main_menu table{
+    margin: 0px;
+    list-style-type: none;
+    display: block;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.main_menu table th {
+    color: grey;
+    text-decoration: none;
+    display: inline-block;
+    border-right: 1px solid black;
+    margin: 10px 12px 0px 0px;
+    font-size: 8.5pt;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px 15px 10px 15px;
+}
+
+.main_menu table th:last-child {
+    border-right: none;
+}
+.hero {
+    width: 97.9%;
+    height: 346px;
+    background-color: #3b3b3b;
+    background-image: url(images/main_pic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+
+.icon_bar {
+    width: 97.9%;
+    height: 129px;
+    background: #1A1A1A;
+    display: block;
+    padding-top: 30px;
+}
+.icon_bar h1 {
+    color:peru;
+    font-size: 1.2em;
+    text-align: left;
+    width: initial;
+    display: inline;
+    font-weight: normal;
+}
+.icon_bar p {
+    display: inherit;
+    font-size: 0.65em;
+    padding: 0px 59px 0px 59px;
+    color: #B0B0B0;
+    font-family: sans-serif;
+}
+.icon_bar ul{
+    margin: 0px;
+    list-style-type: none;
+    display: block;
+}
+
+.icon_bar ul li{
+    display: inline-block;
+    width: 24%;
+}
+.icon_bar ul li img {
+    width:42px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: -25px;
+    margin-right: 16px;
+}
+.action_prompt {
+    width: 89.6%;
+    height: 74px;
+    background: repeating-linear-gradient(
+      -55deg,
+      black,
+      black 2px,
+      #1A1A1A 4px,
+      #1A1A1A 4px);
+    display: block;
+    padding: 40px;
+}
+.action_prompt h1{
+    font-weight: 500;
+    color: #B0B0B0;
+    font-size: 1.5em;
+    margin: 0px;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.action_prompt p{
+    font-size: 0.65em;
+    color: #B0B0B0;
+    width: 67%;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.button button{
+    display: inline-block;
+    background: coral;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 164px;
+    margin-top: 0px;
+}
+.portfolio {
+    width: 93.8%;
+    height: 355px;
+    background: #1A1A1A;
+    padding: 30px 20px 0px 20px;
+    margin-left: 0px;
+}
+
+.portfolio h1 {
+    color: #B0B0B0;
+    font-weight: 500;
+    display: inline;
+    font-size: 1.2em;
+    font-family: serif;
+
+}
+
+.portfolio h2 {
+    color: peru;
+    font-size: 0.85em;
+    font-style: italic;
+    display: inline;
+    margin-left: 707px;
+    padding: 0px;
+
+}
+
+.portfolio h3 {color: peru;font-weight: normal;font-size: 1em;}
+.column_1 p, .column_2 p, .column_3 p, .column_4 p{
+    color: #B0B0B0;
+    font-size: 0.65em;
+    width: 100%;
+    font-family: sans-serif;
+}
+.column_1 img, .column_2 img, .column_3 img, .column_4 img {
+    width: 97%;
+    height:50%;
+    border: 3px solid #363636;
+}
+ .column_1, .column_2, .column_3{
+    display: inline-block;
+    width: 205px;
+    height: 280px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.column_4 {
+    display: inline-block;
+    width: 205px;
+    height: 280px;
+    margin-top: 20px;
+    margin-right: 0px;
+}
+span.footer {
+    color: #B0B0B0;
+    font-size: 0.6em;
+    position: absolute;
+    bottom: -295px;
+    right: 1000px;
+}

@@ -1,0 +1,118 @@
+.wrapper {
+    background: #DDDFD4;
+    width: 902px;
+    height: 100%;
+    padding: 20px;
+}
+.header {
+    background: #3FB0AC;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.header img {
+    width: 7%;
+    position: relative;
+    top: 18px;
+    mix-blend-mode: multiply;
+
+}
+
+.header h1{
+    font-size: 2em;
+    color: black;
+    font-weight: lighter;
+    display: inline;
+}
+
+.header ul {
+    list-style: none;
+    text-decoration: underline;
+    color: white;
+    padding-left: 115px;
+    display: inline;
+}
+
+ul {}
+.header ul li {
+    display: inline;
+    margin-right: 12px;
+    font-weight: lighter;
+}
+
+li {}
+.yellow_box {
+    background: #FAE596;
+    width: 97.9%;
+    height: 496px;
+    margin: 20px 0px 10px 0px;
+    padding: 20px 0px 20px 20px;
+}
+
+.yellow_box h1 {color: #D9DCD1;font-size: 1.2em;font-weight: normal;margin-left: 5px;}
+
+h1 {}
+
+.yellow_box h2 {color: #D9DCD1;font-size: 1em;font-weight: lighter;margin-top: 8px;margin-bottom: 8px;margin-left: 5px;}
+
+.yellow_box p {color: #D9DCD1;margin-left: 17px;line-height: 17px;margin-right: 15px;margin-top: -3px;font-size: 0.85em;}
+
+p {}
+.yellow_box span.blue {color: #51D4C5;}
+.footer {
+    background: #3FB0AC;
+    width: 100%;
+    height: 100px;
+}
+
+.side_bar {
+    width: 25%;
+    height: 100%;
+    background: #173F43;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+.row1 {
+    display: inline-block;
+    width: 19%;
+    height: 29%;
+    margin: 0px 20px 20px 20px;
+    background: #173F43;
+    vertical-align: top;
+}
+.row1_last {
+    display: inline-block;
+    width: 19%;
+    height: 29%;
+    margin: 0px 0px 20px 20px;
+    background: #173F43;
+    vertical-align: top;
+}
+.row2 {
+    display: inline-block;
+    width: 31.1%;
+    height: 29%;
+    margin: 0px 20px 20px 20px;
+    background: #173F43;
+    vertical-align: top;
+    position: relative;
+    left: 244px;
+    bottom: 322px;
+}
+
+.row3 {
+    display: inline-block;
+    width: 67.3%;
+    height: 29%;
+    margin: 0px 20px 20px 20px;
+    background: #173F43;
+    vertical-align: top;
+    position: relative;
+    left: 244px;
+    bottom: 309px;
+}
+.footer p{text-align: center;padding-top: 42px;}
+.footer span.purple {color: #551A8B;text-decoration: underline;}

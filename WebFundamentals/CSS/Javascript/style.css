@@ -1,0 +1,140 @@
+/*CSS reset settings here*/
+{
+ margin: 0px;
+ padding: 0px;
+}
+
+h1 {
+    color: #c1d7e9;
+    margin: auto;
+}
+
+h2 {
+    color: #c1d7e9;
+}
+
+
+h3 {
+    color: #56d3d6;
+    font-size: 11pt;
+    text-decoration: underline;
+    font-weight: normal;
+
+}
+h4 {
+    color: #56d3d6;
+    font-size: 9pt;
+    text-decoration: underline;
+    display: inline;
+    margin:auto;
+    font-weight: normal;
+}
+p {
+    color:#c1d7ea;
+    font-size:9pt;
+    display: inline;
+    margin:auto;
+
+}
+ul {
+    /*list-style: disc;*/
+    /*display: block;*/
+    /*margin-top: -15px;*/
+    /*margin-bottom: -15px;*/
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
+    padding-left: 15px;
+}
+
+li {
+    margin-top: -15px;
+    margin-bottom: -15px;
+    color:#c1d7ea;
+}
+span.cchange{
+    color:#5e74da;
+}
+ul.main_bullets {
+    margin-top: -15px;
+    padding-left: 30px;
+}
+
+p.about  {
+    color:#7ba9cd
+    font-size:9pt;
+    display: inline;
+    margin:auto;
+}
+.main_bullets li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:#c1d7ea;
+}
+.wrapper{
+ width: 970px;
+ background-color: #1A345A;
+ margin: 0px auto;
+ padding: 10px 10px 10px 10px;
+
+}
+.header{
+ height: 50px;
+ background-color: #D32C39;
+ margin-bottom: 20px;
+ padding: 15px;
+ border-radius: 10px;
+}
+
+.navigation{
+ height: 225px;
+ width: 250px;
+ background-color: #1f7d8b;
+ padding-left: 15px;
+ margin-right: 25px;
+ float: left;
+ border-radius: 10px;
+
+}
+.main_content{
+ height: 470px;
+ background-color: #0D1821;
+ padding:10px;
+ display: flex;
+ margin-left: 20px;
+ margin-bottom: 20px;
+ border-radius: 10px;
+}
+
+.main_title{
+    /*background-color:white;*/
+    height:50px;
+    margin-left:10px;
+    position: relative;
+    bottom:15px;
+
+}
+
+.main_description {
+    /*background-color: red;*/
+    position: absolute;
+    top:168px;
+    left:790px;
+    width:650px;
+}
+.main_points {
+    /*background-color: yellow;*/
+    position: absolute;
+    top:260px;
+    width:650px;
+}
+
+.advertisement{
+ height: 25px;
+ background-color:#5d6672;
+ border-radius: 10px;
+ padding:15px 0px 5px 20px;
+
+ /*margin-left:8px;
+ position: absolute;
+ bottom: 350px;*/
+}

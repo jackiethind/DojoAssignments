@@ -1,0 +1,241 @@
+p {
+  font-size:10pt;
+  color:white;
+}
+
+.hero{
+  width: 970px;
+  background-color: #265175;
+  padding: 20px;
+  height: 430px;
+}
+.python_logo{
+  position:relative;
+}
+.text_size{
+  position: absolute;
+  left: 825px;
+  bottom: 540px;
+
+}
+span.gold{
+  color:#9a9126;
+  text-decoration: underline;
+}
+
+.search {
+  color:red;
+  text-align:center;
+  cursor:pointer;
+  display: inline;
+  width: 200px;
+
+
+}
+
+
+
+.search_bar{
+  background-color:#444444;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  position:relative;
+  left: 715px;
+  bottom: 95px;
+  border-radius: 10px;
+  box-shadow:  0px 1px 3px 1px black;
+}
+
+.form-wrapper {
+  position: relative;
+  top: 8px;
+}
+.form-wrapper #submit {
+  text-align: center;
+  background-color: #265175;
+  color:white;
+  width: 40px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.form-wrapper #search {
+  text-align: center;
+  height: 27px;
+  color: grey;
+}
+.main_menu{
+  background-color: #4a7fab;
+  text-align: center;
+  width:900px;
+  height: 40px;
+  position: relative;
+  left: 50px;
+  bottom: 60px;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 1px black;
+}
+.main_menu ul, .footer ul{
+  list-style-type: none;
+
+}
+
+.main_menu ul {
+  padding-top: 5px;
+}
+.main_menu ul li{
+  display: inline;
+  font-size: 18pt;
+  color: white;
+  font-weight: normal;
+  padding: 0px 20px 0px 20px;
+}
+
+.docs {
+  position: relative;
+  left: 100px;
+  text-align: center;
+  width:200px;
+  bottom: 45px;
+
+}
+.docs ul {
+  text-decoration: underline;
+  font-size: 14pt;
+  line-height: 30px;
+  color: white;
+  font-weight: 200;
+  list-style-image: url(file:///Users/jackiethind/Desktop/DojoAssignments/WebFundamentals/CSS/Python/yellow_arrow.png);
+
+}
+
+.main_description{
+  position: absolute;
+  /*background-color: green;*/
+  width:500px;
+  left:400px;
+  bottom:325px;
+  text-align: center;
+
+}
+.quotes{
+  position: relative;
+  /*background-color: red;*/
+  width:500px;
+  left: 400px;
+  bottom: 230px;
+  text-align: center;
+  color: #c0ad51;
+}
+.quotes p {
+  font-size: 14pt;
+  font-weight: 200;
+
+}
+.quotes ul {
+  list-style-type: none;
+  padding-left: 0px;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 16pt;
+  line-height: 30px;
+}
+.sidekick{
+  background-color: white;
+  padding: 20px;
+  width:970px;
+
+}
+.sidekick h2{
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.sidekick p{
+  color: black;
+  font-size: 12px;
+  /*padding: 0px 5px 0px 5px;*/
+  width: 225px;
+  padding-left: 125px;
+  /*margin-bottom: 40px;*/
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+.h_line, .h_line2{
+  width: 375px;
+  height: 5px;
+  background: #75a8d3;
+
+}
+.h_line {
+  margin-left: 85px;
+}
+
+.h_line2 {
+  margin-left: 15px;
+}
+.getting_started {
+  background-color: white;
+  display:inline-block;
+  text-align: center;
+  width:480px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.getting_started h2, .applications h2{
+  margin-top: 5px;
+}
+.getting_started ul, .applications ul{
+  margin-top: 0px;
+  width: 175px;
+  margin-left: 125px;
+  font-size: 12px;
+
+}
+
+
+span.blue_text{
+  color: #98bddd;
+}
+.applications {
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  width: 480px;
+
+}
+
+
+.footer {
+  display: block;
+  height:50px;
+  width:970px;
+  background-color: #316998;
+  background: -webkit-linear-gradient(#316998, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#316998, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#316998, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#316998, black);
+  padding: 20px;
+
+}
+
+.upper_foot {
+  display: block;
+  text-align: center;
+  color: #7aaad3;
+}
+.upper_foot ul li{
+  display: inline;
+  font-size: 12pt;
+  font-weight: normal;
+  padding: 0px 30px 0px 30px;
+}
+.lower_foot{
+  text-align: center;
+
+}
+.lower_foot p {
+    color: #7aaad3;
+}

@@ -1,0 +1,316 @@
+*{
+    font-family: Helvetica;
+}
+
+.container {
+    width:960px;
+}
+
+/*********** HEADER CSS ***********/
+
+.header {
+    width:100%;
+    height:140px;
+    background-color: white;
+}
+
+.headerLogo {
+    background-image: url(images/globe.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    font-weight:lighter;
+    color: black;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.header h2 {
+    font-size: 2em;
+    font-weight: lighter;
+    color: white;
+    display: block;
+    margin-top: -17px;
+    background: #5484aa; /* For browsers that do not support gradients */
+    padding: 10px;
+
+}
+.header span.blue_text {
+    color:#5484aa;
+}
+
+.www_banner {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    bottom: 20px;
+}
+/******** UPPER WRAPPER CSS *********/
+.upper_wrapper {
+    width: 100%;
+    height: 225px;
+    background-color:white;
+    background: -webkit-linear-gradient(#e4e4e4, white);
+      background: -o-linear-gradient(#e4e4e4, white);
+      background: -moz-linear-gradient(#e4e4e4, white);
+      background: linear-gradient(#e4e4e4, white);
+
+}
+/* SIDEBAR CSS */
+.side_bar {
+    width: 23%;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+
+
+
+}
+
+.side_bar h1 {
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+    padding: 20px 0px 0px 5px;
+}
+.side_bar p {
+    font-size: 0.75em;
+    color: black;
+    font-weight: normal;
+    padding: 0px 0px 0px 5px;
+}
+.side_bar span.red_text {
+    color:red;
+}
+.side_bar span.blue_text {
+    color:#61becb;
+}
+.upper_bar {
+    width: 100%;
+    height: 189px;
+}
+.side_line {
+    width: 100%;
+    height: 2px;
+    background: darkgrey;
+}
+
+
+/* MAIN CONTENT CSS */
+
+.main_content {
+    width: 75.5%;
+    height: 250px;
+    display: inline-block;
+
+}
+.main_content h1 {
+    font-weight: normal;
+    color: steelblue;
+    font-size: 0.9em;
+    display: inline-block;;
+    padding-left: 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+.main_content p.grey_text{
+    font-size: 0.5em;
+    color:darkgrey;
+    /*margin-left: 500px;*/
+    margin-bottom: 0px;
+    margin-top: 5px;
+    display: inline-block;
+
+}
+.main_content h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #23c6de;
+    margin: 0px;
+    /*position: absolute;
+    right:80px;
+    top: 100px;*/
+}
+.upper_tab {
+    width: 100%;
+    height: 30%;
+
+
+}
+.dns_number{
+    display: inline-block;;
+    vertical-align: top;
+    width: 49%;
+    height: 100%;
+}
+.contact_info {
+    display: inline-block;;
+    /*margin-left: 200px;*/
+    width: 50%;
+
+    height: 100%;
+    /*padding-left: 160px;*/
+}
+.contact_info img {
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+    left: 175px;
+}
+.phone_text {
+    text-align: center;
+
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    left:175px;
+    /*margin-left: 200px;*/
+}
+.grey_line {
+    width: 100%;
+    height: 2px;
+    background: darkgrey;
+}
+
+.client_server {
+    width: 100%;
+    height: 68%;
+
+}
+
+.client_server h1 {
+    font-size: 1em;
+    color: #27669c;
+    margin: 10px 0px 1px -5px;
+    font-weight: bold;
+}
+
+.client_server p {
+    font-size: 0.9em;
+    color: black;
+    margin: 0px;
+}
+
+.client_server ul {
+    font-size: 0.9em;
+    color: black;
+    margin: 0px;
+}
+
+.client_server span.light_blue {
+    color: #61becb;
+}
+/********* LOWER WRAPPER ***********/
+
+.lower_wrapper {
+    width: 99.5%;
+    height: 500px;
+
+}
+
+.side_banner {
+    width: 23%;
+    height: 350px;
+    display: inline-block;
+    background-image: url(images/ad_background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    text-align: center;
+
+}
+.side_banner img{
+    width: 42%;
+
+}
+.side_banner h1{
+    color: white;
+    margin: 20px 5px;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+.lower_content {
+    width: 76%;
+    height: 98%;
+    display: inline-block;
+
+}
+.diagram_paragraph {
+    width: 100%;
+    height: 62%;
+    display: block;
+
+}
+.diagram_paragraph img{
+    width: 37%;
+    margin-left: 221px;
+    display: block;
+
+}
+.diagram_paragraph h1 {
+    font-size: 1em;
+    color: #27669c;
+    margin: 10px 0px 1px 0px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+.diagram_paragraph span.light_blue {
+    color: #61becb;
+}
+.diagram_paragraph ol {
+    margin-top: 0px;
+}
+.diagram_paragraph ol li {
+    font-size: 0.9em;
+    color: black;
+    margin: 0px;
+    line-height: 18px;
+}
+.big_three {
+    width: 93%;
+    height: 22%;
+
+    display: block;
+    margin-left: 5px;
+    border: 5px #0087dd solid;
+    border-bottom: none;
+    padding: 15px 15px 0px 15px;
+}
+.big_three img{
+    width: 16%;
+    display: inline-block;
+}
+
+.big_three h1 {
+    font-size: 1em;
+    color: #27669c;
+    margin: 10px 0px 1px 0px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+}
+
+.big_three p {
+    font-size: 0.9em;
+    color: black;
+    margin: 0px;
+    line-height: 18px;
+    display: inline-block;
+    margin-left: 113px;
+    position: relative;
+    bottom: 78px;
+}
+
+.big_three span.light_blue {
+    color: #61becb;
+}
