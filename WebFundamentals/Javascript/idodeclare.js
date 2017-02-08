@@ -1,0 +1,18 @@
+ var num1 = 42;
+ var num2 = -3;
+ var num3 = 0.44;
+ var num4 = 78;
+ var string1 = "Jack";
+ var string2 = "Nancy";
+ var string3 = "Shrek";
+ var hellno = false;
+ var pirate = true;
+ console.log("The first number: " + num1);
+ console.log("The second number: " + num2);
+ console.log("The third number: "+ num3);
+ console.log("The fourth number: "+ num4);
+ console.log("The first name: "+ string1);
+ console.log("The second name: "+ string2);
+ console.log("The third name: "+ string3);
+ console.log("Brussel sprouts rock: "+ hellno);
+ console.log("I've got a jar of dirt: "+ pirate);

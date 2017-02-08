@@ -1,0 +1,32 @@
+Source: https://pip.pypa.io/en/stable/reference/
+
+pip install Django - Install packages from:
+
+PyPI (and other indexes) using requirement specifiers.
+VCS project urls.
+Local project directories.
+Local or remote source archives.
+pip also supports installing from "requirements files", which provide an easy way to specify a whole environment to be installed.
+
+
+pip list - List installed packages, including editables.
+
+Packages are listed in a case-insensitive sorted order.
+
+pip install Django - 
+
+pip freeze - Output installed packages in requirements format.
+
+packages are listed in a case-insensitive sorted order.
+
+pip uninstall Django - Uninstall packages.
+
+pip is able to uninstall most installed packages. Known exceptions are:
+
+Pure distutils packages installed with python setup.py install, which leave behind no metadata to determine what files were installed.
+Script wrappers installed by python setup.py develop.
+
+pip show Django - Show information about one or more installed packages.
+
+pip search Flask - Search for PyPI packages whose name or summary contains <query>.
+

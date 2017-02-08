@@ -1,0 +1,23 @@
+.throne_wrapper img {
+    width: 200px;
+    height: 250px;
+
+}
+.throne_wrapper {
+    display: inline-block;
+}
+
+.description {
+    border: 2px solid black;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    color:lavender;
+    background-color: black;
+}
+
+.description h4 {
+    margin: 10px;
+    text-align: center;
+    color:peru;
+}

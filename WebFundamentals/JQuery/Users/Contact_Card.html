@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="Contact_Card.js" defer></script>
+        <style media="screen">
+
+            .FormWrapper{
+                width: 240px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .card_holder {
+                border: 1px solid black;
+                /*width: 200px;*/
+                height: auto;
+                display: inline-block;
+            }
+            .seen {
+                width: 200px;
+                height: 100px;
+                background-color: red;
+            }
+            .magic {
+                width: 200px;
+                height: 100px;
+                background-color: blue;
+            }
+
+            .magic {}
+        </style>
+    </head>
+    <body>
+
+
+        <div class="FormWrapper">
+
+            <h1>Add User</h1>
+            <form class="UserForm" action="index.html" method="post">
+                <label for="FirstName">First Name:</label>
+                <input type="text" id="FirstName" name="FirstName" value="First Name">
+
+                <label for="LastName">Last Name:</label>
+                <input type="text" id="LastName" name="LastName" value="Last Name">
+                Description
+                <textarea name="descrip" id="Descrip" rows="8" cols="30" value="haha">
+
+                </textarea>
+
+            </form>
+            <button type="button" name="button">Add User</button>
+
+        </div>
+        <div class="card_holder">
+        </div>
+    </body>
+</html>

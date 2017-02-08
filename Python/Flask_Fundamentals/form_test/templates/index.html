@@ -1,0 +1,28 @@
+<html>
+    <head>
+       <title>Form Test Index</title>
+    </head>
+    <body>
+      <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+      <form action='/users' method='post'>
+          Your Name: <input type='text' name='name'>
+          <br>
+          Dojo Location: <select name="location">
+                            <option value="Silicon Valley">Silicon Valley</option>
+                            <option value="Frisco">Frisco</option>
+                            <option value="Berkeley">Berkeley</option>
+                            <option value="San Diego">San Diego</option>
+                          </select>
+          <br>
+          Favorite Language: <select name="langs">
+                            <option value="Python">Python</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="JS">JS</option>
+                            <option value="PHP">PHP</option>
+                          </select>
+          <br>
+          Comment (optional) <textarea name="comment" rows="8" cols="40"></textarea>
+          <input type='submit' value='Submit'>
+      </form>
+    </body>
+</html>

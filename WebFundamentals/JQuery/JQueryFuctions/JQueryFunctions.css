@@ -1,0 +1,18 @@
+.fxns {
+    width: 600px;
+    height:85px;
+    border: 1px solid black;
+    text-align: center;
+}
+h1 {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+h1 .blue {
+    background: blue;
+}
+
+p {
+    display: inline-block;
+}
