@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Great Number Game!</title>
+</head>
+<body>
+	<h1>Welcome to the Great Number Game!</h1>
+	<h4>I am thinking of a number between 1 and 100</h4>
+	<h4>Take a guess!</h4>
+	<h1>{{session["setValue"]}}</h1> <!-- this will take the setValue variable from the session and display in the h1 tag -->
+	<h1>{{message}}</h1> <!-- this will take the message returned from the server -->
+
+	{% if number != session["setValue"] %} <!-- this checks to see if the guessed number is not equal to the session random number -->
+	<form method="post" action="/">
+		<input type="text" name="number">
+		<input type="submit" name="button" value="Guess"> <!-- button stays as a guess button -->
+	</form>
+	{% endif %}
+
+	{% if number == session["setValue"] %} <!-- this checks to see if the guessed number is not equal to the session random number -->
+	<form action="/">
+		<input type="submit" name="button" value="Reset"> <!--button changes to reset button -->
+	</form>
+	{% endif %}
+
+</body>
+</html>
