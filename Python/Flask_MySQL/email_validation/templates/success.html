@@ -8,6 +8,8 @@
         <p>The email address you entered ({{all_emails[all_emails|length-1]['email']}}) is a VALID email address! Thank you! </p>
     </div>
   <h1>Email Addresses Entered:</h1>
-        <p>{{all_emails[all_emails|length-1]['email']}} {{all_emails[all_emails|length-1]['created_at']}}</p>
+  {% for email in all_emails: %}
+        <p>{{email['email']}} {{email['created_at']}}</p>
+  {% endfor %}
 </body>
 </html>
