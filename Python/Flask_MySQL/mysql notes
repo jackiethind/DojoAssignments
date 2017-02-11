@@ -1,0 +1,144 @@
+MYSQL Notes
+Python should handle functionality by default not JQUERY
+
+The new language of databases
+we need to know how to navigate the request response from server to database
+
+SQL
+mySQL is built on SQL
+Postgress, Oracle, noSQL (not only SQL)
+
+SQL Structured Query Language
+    relational database management system (rdbms)
+        tables talk to each other
+    GOALS
+        do not repeat data
+            here are some rules for this
+                1.) each column has 1 value
+                    break Amy Giver into columns under first name and last name
+                    what about address?
+                        street & city & state & zipcode
+                2.) each column should be unique, name them with underscores between words
+                    movies table for finding nemo = animated(1) cartoon(2) family(3) pixar - assign keys to everything, holding 20 characters is harder than holding onto a number key
+                    movies              genre
+                    ____________________________
+                    1. finding nemo     1
+                    1. finding nemo     2
+                    1. finding nemo     3
+                3.) non key should not be dependent on other non key columns
+                    Movies
+                    id              name           theater             theater city
+                    _____________________________________________________________________
+                    1               finding nemo   century 16          Mtn View
+                    (primary key)                  ^
+                                                   |____non keys but dependent on each other (this is bad if you change the theater because you also have to change the theater city)
+
+                    Theaters
+                    id          theater         city            so lets assign a key to the theater and its city
+                    ------------------------------------
+                    1           century 16      Mtn View <----- here it is a primary key in its own table.
+
+                    Movies
+                    id              name           theater
+                    _____________________________________________________________________
+                    1               finding nemo   2 <------this key is a foriegn key now because it being pulled from another table
+
+
+
+    you can assign keys to one table and then pull the key from it to another table
+    how do you know which tables are talking to each other
+    we need to make connections between tables
+    we use relational mapping because we do not want to repeat data
+QUERY = Question, but thats not what it means in database world. it means REQUEST
+    = making a request
+        you need to learn how to speak SQL to make these requests from the database
+        THAT IS WHAT WE ARE GOING TO BE LEARNING HOW TO DO
+ERD = our friends :) they stand for entity relationship diagram
+        great way to start designing a database, your way to visualize what your database looks like
+        its a visualization tool! ooo i like
+        Use this to construct and plan the DB
+        in order to understand which tables are talking to which, we will draw out the relationships to visualize the mapping
+
+    1:1 relationship
+        users
+        -------------------------------------------
+        id      first name      last name   email
+        --------------------------------------------
+        1       Amy             Giver       2
+
+        emails
+        --------------------------
+        id          email
+        --------------------------
+        1           fdajkf@gfdakj.com
+        2           fjdlajf@fdaw.com
+
+        these ids are for, every table should have its own unique identifier (id column)
+
+    1 to many relationship
+        users
+        -------------------------------------------
+        id      first name      last name   email
+        --------------------------------------------
+        1       Amy             Giver       2
+        1       Amy             Giver       3
+
+        emails
+        --------------------------
+        id          email
+        --------------------------
+        1           fdajkf@gfdakj.com
+        2           fjdlajf@fdaw.com
+        3           fdafdkkw@fdaksal.com
+    many to many relationship
+        Amy  - biking
+               kayaking
+               mollusks
+        Vik  - biking
+               mollusks
+               rafting
+
+               users
+               ------------------
+               id      name
+               ------------------
+               1       Amy
+               2       Vik
+
+               Interests
+               ---------------------
+               id       name
+               ---------------------
+               1        biking
+               2        kayaking
+               3        bikes
+               4        rafting
+
+               id       user id     interests <----joiner table
+               ------------------------------
+               1        1           1
+               2        1           2
+               3        1           3
+               4        2           1
+               5        2           2
+               6        2           4
+
+MYSQL Workbench
+    schemas mean your database
+    enter querys with a semicolon!
+    command enter and it will run for you
+    if you use semicolons, you can seperate
+    use world(schemas): first query
+    select * (all) from cities: second query
+    move cursor to the one i want to run
+
+    you can also filter countries
+    select * from countries WHERE id=159:
+
+
+Normalization = convention in database design to make our data more concise and make sure we dont repeat data \
+
+Simple Blog
+table for users
+table for posts
+table for 

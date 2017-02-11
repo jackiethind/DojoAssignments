@@ -1,0 +1,13 @@
+
+<html>
+<head>
+  <title>Email Validation</title>
+</head>
+<body>
+    <div class="green">
+        <p>The email address you entered ({{all_emails[all_emails|length-1]['email']}}) is a VALID email address! Thank you! </p>
+    </div>
+  <h1>Email Addresses Entered:</h1>
+        <p>{{all_emails[all_emails|length-1]['email']}} {{all_emails[all_emails|length-1]['created_at']}}</p>
+</body>
+</html>

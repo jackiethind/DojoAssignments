@@ -1,0 +1,18 @@
+INSERT INTO users (first_name, last_name, created_at, updated_at)
+VALUES ('George', 'Washington', NOW(), NOW():
+SELECT * from users:
+SELECT * from friendships:
+
+
+SELF join, joiner table thats joining a table to itself
+press cmd enter to make the highlighted line work
+
+
+select users.first_name, users.last_name, users2.first_name as friend_first, users2.last_name as friend_last from users
+
+left JOIN friendships
+ON user_id = users.id
+
+JOIN users AS users2
+ON users2.id = friend_id
+order by friend_last desc:
