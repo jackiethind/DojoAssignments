@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        {% include 'survey/styling_links.html'%}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <form class="" action="/users" method="POST">
+                        {% csrf_token %}
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" class="form-control" placeholder="Barrack Obama">
+                        <label for="location" class="mr-sm-2">Dojo Location:</label>
+                        <select name= "location">
+                            <option selected>Choose...</option>
+                            <option value="Mountain View">Mountain View</option>
+                            <option value="Silicon Valley">Silicon Valley</option>
+                            <option value="Boston">Boston</option>
+                        </select>
+                        <br>
+                        <label for="langs" class="mr-sm-2">Favorite Language:</label>
+                        <select name= "langs">
+                            <option selected>Choose...</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="Python">Python</option>
+                            <option value="Ruby">Ruby</option>
+                        </select>
+                        <br>
+                        <label for="comment" >Comment (optional):</label>
+                        <textarea class="form-control" name="comment" rows="3"></textarea>
+                        <!--SUBMIT BUTTON -->
+                        <button type="submit" name="button" class="btn btn-primary btn-sm" href="#">
+                        <i class="fa fa-check" aria-hidden="true"></i> Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

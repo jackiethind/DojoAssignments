@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        {% include 'magic/styling_links.html'%}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    {% load staticfiles %}
+                <!-- purple -->
+                    {% if check == "purple" %}
+                    <img src="{% static 'magic/img/donatello.jpg' %}">
+                <!-- blue -->
+                    {% elif check == "blue" %}
+                    <img src="{% static 'magic/img/leonardo.jpg' %}">
+                <!-- orange -->
+                    {% elif check == "orange" %}
+                    <img src="{% static 'magic/img/michelangelo.jpg' %}">
+                <!-- red -->
+                    {% elif check == "red" %}
+                    <img src="{% static 'magic/img/raphael.jpg' %}">
+                <!-- april -->
+                    {% elif check == "bad" %}
+                    <img src="{% static 'magic/img/meganfox.jpg' %}">
+                    {% else %}
+                    <img src="{% static 'magic/img/tmnt.png' %}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

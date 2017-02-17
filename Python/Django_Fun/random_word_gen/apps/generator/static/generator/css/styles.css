@@ -1,0 +1,9 @@
+h4{
+    color:red;
+}
+div.word_gen {
+    border: 3px solid black;
+    display: block;
+    padding: 5%;
+    margin: 5%;
+}

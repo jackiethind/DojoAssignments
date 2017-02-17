@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Time Display</title>
+        {% include 'timedisplay/styling_links.html'%}
+        <!-- The line above tells Django to be ready to listen for static files -->
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <p>The current time and date:</p>
+                    <div class="time_box">
+                        <span class="time">{{time}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

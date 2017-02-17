@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        {% include 'survey/styling_links.html'%}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h4>Thanks for submitting this form! You have submitted this form {{request.session.num}} times now.</h4>
+                    <div class="">
+                        <p>Name: {{name}}</p>
+                        <p>Location: {{location}}</p>
+                        <p>Favorite Language: {{langs}}</p>
+                        <p>Comment: {{comment}}</p>
+                    </div>
+                    <form action="/users" method="post">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary btn-sm" href="#" name ="button" value = "back">
+                        <i class="fa fa-check" aria-hidden="true"></i> Go Back
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
