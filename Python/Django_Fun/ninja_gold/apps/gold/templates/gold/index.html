@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        {% include 'gold/styling_links.html'%}
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Your Gold:{{gold}}</h4>
+                </div>
+            </div>
+            <div class="border row">
+              <div class="border col-md-3">
+                  <div class="box">
+                      <h2>Farm</h2>
+                      <p>(earns 10-20 golds)</p>
+                      <form class="" action="/process" method="POST">
+                          {% csrf_token %}
+                          <input type="hidden" name="building" value="farm" />
+                          <button type="submit" class="btn btn-success btn-sm" href="#">
+                          <i class="fa fa-usd" aria-hidden="true"></i> Find Gold!
+                      </form>
+                  </div>
+              </div>
+              <div class="border col-md-3">
+                  <div class="box">
+                      <h2>Cave</h2>
+                      <p>(earns 5-10 golds)</p>
+                      <form class="" action="/process" method="POST">
+                          {% csrf_token %}
+                          <input type="hidden" name="building" value="cave" />
+                          <button type="submit" class="btn btn-success btn-sm" href="#">
+                          <i class="fa fa-usd" aria-hidden="true"></i> Find Gold!
+                      </form>
+                  </div>
+              </div>
+              <div class="border col-md-3">
+                  <div class="box">
+                      <h2>House</h2>
+                      <p>(earns 2-5 golds)</p>
+                      <form class="" action="/process" method="POST">
+                          {% csrf_token %}
+                          <input type="hidden" name="building" value="house" />
+                          <button type="submit" class="btn btn-success btn-sm" href="#">
+                          <i class="fa fa-usd" aria-hidden="true"></i> Find Gold!
+                      </form>
+                  </div>
+
+              </div>
+              <div class="border col-md-3">
+                  <div class="box">
+                      <h2>Casino</h2>
+                      <p>(earns/takes 0-50 golds)</p>
+                      <form class="" action="/process" method="POST">
+                          {% csrf_token %}
+                          <input type="hidden" name="building" value="casino" />
+                          <button type="submit" class="btn btn-success btn-sm" href="#">
+                          <i class="fa fa-usd" aria-hidden="true"></i> Find Gold!
+                      </form>
+                  </div>
+              </div>
+            </div>
+            <label for="log" >Log:</label>
+            <textarea class="form-control" name="log" rows="5">
+                {{request.session.log}}
+            </textarea>
+        </div>
+    </body>
+</html>

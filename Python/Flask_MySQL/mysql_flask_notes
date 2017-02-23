@@ -16,3 +16,24 @@ ON user_id = users.id
 JOIN users AS users2
 ON users2.id = friend_id
 order by friend_last desc:
+
+SELECT users.first_name as followed, users2.first_name as follower
+FROM users
+LEFT JOIN follows
+ON users.id = follows.followed_id
+LEFT JOIN users as users2
+ON users2.id = follows.follower_id
+WHERE users.id = 1;
+
+JOIN VS LEFT JOIN
+    JOIN only finds things if there is a match
+    LEFT JOIN finds all the things even if there is no match for primary key to foreign key
+
+
+SQL ORM
+Object relational mapper
+    imports a database that speaks another language
+    you make queries from python now using this
+
+    install pip stuff, make a new file, mysqlconnection.py, needs to be included in your projects
+we will stop using session, we are only using user id for session now

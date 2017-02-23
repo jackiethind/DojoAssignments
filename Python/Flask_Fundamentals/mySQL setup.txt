@@ -1,0 +1,21 @@
+
+SELECT *
+FROM users;
+
+SELECT *
+FROM faves;
+
+SELECT *
+FROM tweets;
+
+SELECT first_name, last_name
+FROM users;
+
+SELECT *
+FROM users
+WHERE first_name LIKE "%e";
+
+INSERT INTO users (first_name, last_name)
+VALUES('Jackie', 'Thind');
+
+UPDATE users SET first_name = 'HAHA', last_name='SIKE' WHERE id = 1

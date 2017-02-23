@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The WAll</title>
+        <style>
+            p.comment {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Wall</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <!-- FORM TO POST A MESSAGE -->
+        <h3>Post a message</h3>
+        <form action="/message" method="post">
+            <textarea name="message" rows="8" cols="80"></textarea>
+            <button type="submit" name="button">Post a message</button>
+        </form>
+        <!-- DISPLAY ALL MESSAGES -->
+        {{% for messages in messages%}}
+        <h6>{{message.first_name}} {{message.last_name}} {{message.created_at}}</h6>
+        <p>{{message.message}}    </p>
+            {% for comment in comments %}
+            {% if message_id == comment.message_id %}
+            <h6>{{comment.first_name}} {{comment.last_name}} {comment.created_at}</h6>
+            <p class = "comment">{{comment.comment}}</p>
+            {{% endif %}}
+            {{% endfor %}}
+
+        <!-- FORM TO SUBMIT A COMMENT -->
+        <form action = "/comment "method="POST">
+            <label for="usercomment">Leave a comment</label>
+            <textarea name="name" rows="5" cols="150" name="usercomment"></textarea>
+            <input type="hidden" name="msgid" value="{{message.id}}">
+            <button type="submit" name="button">Subimt</button>
+        </form>
+        {{% endfor %}}
+        <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+    </body>
+</html>

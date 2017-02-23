@@ -3,7 +3,11 @@ app = Flask(__name__)
 # our index route will handle rendering our form
 @app.route('/')
 def index():
-  return render_template("index.html")
+    try:
+        request.session['num']
+    except KeyError:
+        request.session['num'] = 0
+    return render_template(request,"survey/index.html")
 # this route will handle our form submission
 # notice how we defined which HTTP methods are allowed by this route
 @app.route('/users', methods=['POST'])

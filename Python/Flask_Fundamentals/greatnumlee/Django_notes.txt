@@ -1,0 +1,30 @@
+MVC
+Model View Controller
+In order to make code easier to organize, by modularizing our code
+Ppl wrote scrolls, but then ppl made books, organize things into chapters and pages
+makes organizing and splitting up tasks easier
+
+Views / Templates (Django)
+HTML, what the user sees
+Button <--submits request
+
+Controller/ Views(Django)
+handles routing, receives request from views
+..going to figure out your routes for you
+tells model what we need
+sends information taken from model to the views
+SKINNY
+
+
+Model
+in charge of taking to the database, all your sql queries go here
+validate inputs (email validations!)
+fetch information from database
+delivers back to the controller, not to the views
+FAT
+
+
+DJango
+MVC is actually MTV now, you can divide your entire website into separate apps
+You have an app called login and registration, eventually u want to visit a new page once
+ive logged in. I should have access to different functionality.

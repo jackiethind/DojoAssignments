@@ -31,8 +31,15 @@ def process():
         mysql.query_db(query,data)
         query = "SELECT * FROM emails"
         emails = mysql.query_db(query)
-        return render_template('success.html', all_emails=emails)
-    return redirect('/')
+        return redirect('/success')
 
+    return redirect('/')
+@ap.route('/success')
+def success():
+    query = "SELECT * FROM emails"
+    emails = mysql.query_db(query)
+    for em in emails:
+        em['created_at']
+    return render_template('success.html', all_emails=emails)
 
 app.run(debug=True)

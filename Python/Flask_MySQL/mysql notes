@@ -141,4 +141,10 @@ Normalization = convention in database design to make our data more concise and 
 Simple Blog
 table for users
 table for posts
-table for 
+table for
+
+
+
+{% if legit_email == 1 %}
+{% else %}
+{% endif %}

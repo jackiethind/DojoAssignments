@@ -1,0 +1,39 @@
+Templates
+html
+CSS
+JS
+
+Views
+routing and logic
+
+models
+database
+
+SQlite
+    no separate server, its all local
+    FASTER
+    speak python to our database! You are relying on the ORM to do the queries
+    you can still do rawSQL. to do other queries
+
+from django.db import models
+from __future__import unicode_literals
+#create your models here
+# you need to start writing your class
+
+class User(models.Model):
+    first_name = model.CharField(max.length = 45)
+    created_at = model.DateTimeField(auto_now_add = True)
+
+
+
+    ONE HUGE DIFFERENCE
+    before when we were using mySQL, lets say we had a many to many relationship for posts, you
+    automatically got a foriegn key. EVERYTHING will get an id by default for user
+
+    YOU DONT NEED TO SPEND TIME MAKING JOINS ON USER ID for django
+
+    Do a class of post
+
+    class Post(models.model):
+        user = tell it what class will come in here so....
+        user = models.ForeignKey(User) NOT THE USER ID, BUT IT MAKES AN INSTANCE OF EVERYTHING THAT USER HAS

@@ -1,0 +1,30 @@
+mike = User.objects.get(id=3)
+mike.league.location
+^          ^
+|          |
+instance of league
+
+ORM many to many field
+
+class User(models.Model)
+    league
+    interests = models.ManyToManyField(Interest, related_name="ints")
+related names used to go back for
+Many to many is good for 
+    keeping things unique
+
+Many to many is bad if i wanted to poke users
+    you may want to count how many times something happens, many to many wont keep count
+    if youre try to keep count dont use this
+    if you are interested in new content all the time, then use many to many
+
+class Interest(models.Model)
+    name
+
+
+User
+    name
+
+Poke
+    poker = instance of user 1
+    poked = instance of user 2
