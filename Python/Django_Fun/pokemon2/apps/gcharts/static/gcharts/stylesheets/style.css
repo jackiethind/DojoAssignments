@@ -1,0 +1,103 @@
+/*CSS Reset*/
+* {
+  padding: 0px;
+  margin: 0px;
+  color:#300032;
+}
+body{
+  white-space: nowrap;
+}
+h1{
+  text-align: center;
+  display:inline-block;
+}
+
+.wrapper {
+    height: auto;
+    width: 100%;
+    background-color: #e6e6e8;
+}
+.team {
+    width: 50%;
+    display: inline-block;
+    background-color: #c43235;
+    height:628px;
+    position: fixed;
+    vertical-align: top;
+    right: -1%;
+}
+
+.poke {
+    border: 1px solid black;
+    height: 7%;
+}
+.mon-list{
+  white-space: normal;
+  width: 50%;
+  height: auto;
+  display: block;
+  background-color: #06000a;
+  margin: 5px;
+}
+.mon-list img{
+  margin: 3px;
+}
+.pokedex{
+   white-space: normal;
+   display: block;
+   width: 100%;
+   height: 295px;
+   background-color: #e6e6e8;
+   margin: 0px;
+   text-align: inherit;
+   font-family: sans-serif;
+   padding: 2%;
+
+}
+.pokedex h1{
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+.pokedex img{
+
+  background-color: #e6e6e8;
+  display: inherit;
+}
+.pokedex h2{
+  font-size: 1em;
+  margin: 1% 1% 1% 0%;
+}
+.pokedex ul{
+  font-style: italic;
+  list-style: none;
+}
+.pokedex p{
+  font-style: italic;
+}
+
+/*#pokelog.sticky {
+   position: fixed;
+   top: 0;
+}*/
+.pokelog {
+    width: 70%;
+    vertical-align: top;
+    background-color: #e6e6e8;
+    display: inline-block;
+}
+.pokehead {
+    text-align: center;
+}
+@font-face {
+    font-family: Pokemon;
+    src: url('../fonts/pokemon.ttf');
+}
+
+@font-face {
+    font-family: 'pokemon_hollownormal';
+    src: url('pokemon_hollow-webfont.woff2') format('woff2'),
+         url('pokemon_hollow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

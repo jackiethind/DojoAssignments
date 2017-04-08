@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CodingDojo Pokedex</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href={%static "gcharts/stylesheets/style.css"%}>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src={%static "gcharts/scripts/script.js"%} defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/4d6e528798.js"></script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="team">
+            <div class="pokehead">
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:2%;">
+                <h1>Pokedex Entry</h1>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:2%;">
+            </div>
+            <div class="pokedex">
+            </div>
+            <div class="poke" id=1>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:-4%; margin-left:2%">
+            </div>
+            <div class="poke" id=2>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:-4%; margin-left:2%">
+            </div>
+            <div class="poke" id=3>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:-4%; margin-left:2%">
+            </div>
+            <div class="poke" id=4>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:-4%; margin-left:2%">
+            </div>
+            <div class="poke" id=5>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:-4%; margin-left:2%">
+            </div>
+            <div class="poke" id=6>
+                <img src="{% static "gcharts/img/pokeball.png" %}" alt="pokeball" class="pokeball" style="width: 5%; margin-bottom:-4%; margin-left:2%">
+            </div>
+            <a href="">Let's Battle!</a>
+        </div>
+       <div class="mon-list">
+       </div>
+    </div>
+  </body>
+</html>
