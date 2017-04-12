@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Why would you edit one wombat?</title>
+</head>
+<body>
+	<form action='/wombats/<%= wombat._id %>' method="post">
+		<h3>Name: </h3><input type="text" name="name" value="<%= wombat.name %>">
+		<h3>Sex: </h3><input type="text" name="sex" value="<%= wombat.sex %>">
+		<h3>Weight: </h3><input type="text" name="weight" value="<%= wombat.weight %>">
+		<input type="submit" value="SUBMITTED BITCH">
+	</form>
+</body>
+</html>

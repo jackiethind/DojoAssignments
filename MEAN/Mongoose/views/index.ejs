@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <ul>
+            <% for (var i = 0; i < users.length; i++) { %>
+            <li>Name: <strong><%= users[i].name %></strong></li>
+            <li>Age: <strong><%= users[i].age %></strong></li>
+            <hr>
+            <% } %>
+        </ul>
+        <form action = "/users" method = 'post'>
+            <label for="">Your Name: </label>
+            <input type="text" name="name">
+            <label for="">Your Age: </label>
+            <input type="text" name="age">
+            <input type="submit" value="submit">
+        </form>
+
+    </body>
+</html>

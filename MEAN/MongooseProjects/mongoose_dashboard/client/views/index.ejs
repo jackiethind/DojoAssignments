@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wombats</title>
+</head>
+<body>
+	<a href="/wombats/new">Create New Wombat Here</a><br>
+	<% for (wombat of wombats) { %>
+		<h3><%= wombat.name %></h3>
+		<h3><%= wombat.sex %></h3>
+		<h3><%= wombat.weight %></h3><br>
+		<form action="/wombats/edit/<%=wombat._id%>"><input type="submit" value="EDIT"></form>
+		<form action="/wombats/destroy/<%=wombat._id%>" method="post"><input type="submit" value="DELETE"></form>
+	<% } %>
+</body>
+</html>

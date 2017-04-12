@@ -25,6 +25,7 @@ function myFunctionRunner(param) {
 myFunctionRunner(stringReturnOne);
 
 
+
 function myDoubleConsoleLog(param1, param2) {
     if (typeof(param1) ==  "function" && typeof(param2) == "function") {
         console.log(param1(),param2());
