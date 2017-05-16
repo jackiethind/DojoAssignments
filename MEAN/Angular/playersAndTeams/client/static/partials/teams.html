@@ -1,0 +1,26 @@
+<h1>Teams</h1>
+<div ng-controller = "teamController">
+    <form name="teamForm" ng-submit = 'create()'>
+        <label for="name">Name</label>
+        <input type="text" name="name" ng-model = 'newTeam.name' minlength='4' required/>
+        <input type="submit" value="Add Team">
+    </form>
+    <div ng-messages="teamForm.name.$error">
+        <p ng-message="minlength">The team name is too short.</p>
+        <p ng-message="required">The team name is required.</p>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody ng-repeat = 'team in teams'>
+        <tr>
+          <td><a href ='#!/{{team.name}}' ng-bind = 'team.name'></a></td>
+          <td><button ng-click='delete(team)'>Delete Team</button></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

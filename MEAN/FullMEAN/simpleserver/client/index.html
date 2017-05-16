@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = 'app'>
+    <head>
+        <meta charset="utf-8">
+        <title>First Mean</title>
+        <script src = 'angular/angular.js'></script>
+        <script src = 'angular-route/angular-route.js'></script>
+        <script src = 'jquery/dist/jquery.js'> </script>
+        <script src= " assets/app.js" charset="utf-8"></script>
+        <script src = 'controllers/newController.js'></script>
+        <script src = 'controllers/editController.js'></script>
+        <script src = 'factories/friendsFactory.js'></script>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Mean, Human-5127.</h1>
+            <a href="#!/new">Create Friends</a>
+            <div ng-view>
+                <!-- Our Partials will show up here -->
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "ls",
+  "homepage": "https://github.com/jackiethind/DojoAssignments",
+  "authors": [
+    "Jackie <jackie.thind@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

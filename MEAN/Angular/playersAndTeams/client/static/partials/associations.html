@@ -1,0 +1,28 @@
+<h1>Associations</h1>
+<div ng-controller='associationsController'>
+    <form ng-submit='addPlayerToTeam(playerData, teamData)'>
+        <select ng-model='playerData'>
+            <option ng-repeat= 'player in players' ng-value="player">{{player.name}}</option>
+        </select>
+        <select ng-model='teamData'>
+            <option ng-repeat = 'team in teams' ng-value='team'>{{team.name}}</option>
+        </select>
+        <input type="submit" value="Add player to team">
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Team</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat='player in players'>
+          <td>{{player.name}}</td>
+          <td>{{player.team}}</td>
+          <td><input type="submit" value="Remove Player from Team" ng-click="removePlayerFromTeam(player)"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

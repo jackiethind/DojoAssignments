@@ -1,0 +1,30 @@
+<h1>Create Friends</h1>
+<div ng-controller = "newController">
+<form ng-submit="create()">
+    <div>
+        <span class="label label-default">Enter your friend's name</span>
+        <input type="text" ng-model='newFriend.name' />
+    </div>
+    <div>
+        <span class="label label-default">Enter your friend's favorite language!</span>
+        <input type="text" ng-model='newFriend.favoriteLanguage' />
+    </div>
+    <input type="submit" value="Create Friend">
+</form>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Favorite Language</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat = 'friend in friends'>
+    <tr>
+      <td ng-bind = 'friend.name'></td>
+      <td ng-bind = 'friend.favoriteLanguage'></td>
+      <td><button ng-click='edit(friend)'>Edit Friend</button></td>
+      <td><button ng-click='delete(friend)'>Delete Friend</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>

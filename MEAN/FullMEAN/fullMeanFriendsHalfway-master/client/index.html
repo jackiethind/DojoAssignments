@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <script src="jquery/dist/jquery.js" ></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="angular-messages/angular-messages.js"></script>
+    <script src ="./assets/app.js"></script>
+    <script src="./assets/controllers/friendsController.js"></script>
+    <script src="./assets/controllers/showController.js"></script>
+    <script src="./assets/controllers/editController.js"></script>
+    <script src="./assets/controllers/newController.js"></script>
+    <script src="./assets/controllers/deleteController.js"></script>
+    <script src="./assets/factories/friendFactory.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#!/">All Friends</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!/new">Create New Friend</a>
+            </li>
+          </ul>
+          <div ng-view></div>
+      </div>
+  </body>
+</html>
